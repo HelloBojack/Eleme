@@ -11,17 +11,72 @@
       </div>
       <i class="iconfont icon-jiantou"></i>
     </div>
-  
-  
 
+    <TabList1 :tabList='tabList1'></TabList1>
+    <TabList2 :tabList='tabList2'></TabList2>
+    <TabList2 :tabList='tabList3'></TabList2>
+    <TabList2 :tabList='tabList4'></TabList2>
+    
   </div>
 </template>
 <script>
+  import TabList1 from '../components/profile/TabList1'
+  import TabList2 from '../components/profile/TabList2'
+
   export default {
     data() {
       return {
+        tabList1: [{
+            icon: 'icon-redbag',
+            style: 'backgroundColor:#fe563c',
+            name: '红包'
+          },
+          {
+            icon: 'icon-coins',
+            style: 'backgroundColor:#61ba2b',
+            name: '金币'
+          }
+        ],
+        tabList2: [{
+            icon: 'icon-location',
+            style: 'color:#429be9',
+            name: '我的地址'
+          }
+        ],
+        tabList3:[
+          {
+          icon: 'icon-shop',
+          style: 'color:#8ad34f',
+          name: '金币商场'
+          },
+          {
+          icon: 'icon-gift',
+          style: 'color:#fa714f',
+          name: '分享拿20元现金'
+          }
+        ],
+        tabList4: [{
+            icon: 'icon-kefu',
+            style: 'color:#459ce9',
+            name: '我的客服'
+          },
+          {
+            icon: 'icon-eleme',
+            style: 'color:#459ce9',
+            name: '下载饿了么APP'
+          },
+          {
+            icon: 'icon-rule',
+            style: 'color:#459ce9',
+            name: '规则中心'
+          }
+        ],
 
       }
+    },
+    components: {
+      TabList1,
+      TabList2
     }
   }
 </script>
@@ -43,20 +98,23 @@
     height: 60px;
     border-radius: 50%;
   }
-  .signlog{
+
+  .signlog {
     width: 70%;
     text-align: left;
     color: #fff;
-    margin-left: 20px;
+    margin-left: 15px;
   }
-  .signlog div:first-child{
-    font-size:22px;
+
+  .signlog div:first-child {
+    font-size: 22px;
     font-weight: bold;
-    
+
   }
-  i.iconfont{
+
+  .profile i.iconfont {
     color: #fff;
-    display:inline-block;
-    font-size:12px;
+    display: inline-block;
+    font-size: 12px;
   }
 </style>

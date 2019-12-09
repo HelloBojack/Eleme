@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "742356",
+      "name": "商场",
+      "font_class": "shop",
+      "unicode": "e6df",
+      "unicode_decimal": 59103
+    },
+    {
       "icon_id": "1005795",
       "name": "饿了么",
       "font_class": "eleme",
@@ -34,6 +41,20 @@
       "unicode_decimal": 58911
     },
     {
+      "icon_id": "1249030",
+      "name": "礼物",
+      "font_class": "gift",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "3216176",
+      "name": "红包",
+      "font_class": "redbag",
+      "unicode": "e75d",
+      "unicode_decimal": 59229
+    },
+    {
       "icon_id": "3764285",
       "name": "订单 ",
       "font_class": "order",
@@ -41,18 +62,32 @@
       "unicode_decimal": 58898
     },
     {
-      "icon_id": "5360122",
-      "name": "红包",
-      "font_class": "hongbao",
-      "unicode": "e62b",
-      "unicode_decimal": 58923
-    },
-    {
       "icon_id": "5661126",
       "name": "发现",
       "font_class": "discover",
       "unicode": "e61b",
       "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "6366905",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "7391189",
+      "name": "定位",
+      "font_class": "location",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "7538940",
+      "name": "规则说明",
+      "font_class": "rule",
+      "unicode": "e791",
+      "unicode_decimal": 59281
     },
     {
       "icon_id": "9472091",
