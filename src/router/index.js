@@ -5,9 +5,13 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path:'/',
+    redirect: '/home'
+  },
+  {
     path: '/home',
     name: 'home',
-    component: () => import( /* webpackChunkName: "about" */ '../views/Home.vue')
+    component: () => import( /* webpackChunkName: "about" */ '../views/Home.vue'),
   },
   {
     path: '/discover',

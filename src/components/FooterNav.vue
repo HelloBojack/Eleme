@@ -1,9 +1,9 @@
 <template>
   <div class="footerNav">
-    <router-link to="/home"><i class="iconfont icon-changyonglogo40"></i>首页</router-link>
-    <router-link to="/discover"><i class="iconfont icon-faxian"></i>发现</router-link>
-    <router-link to="/orderTab"><i class="iconfont icon-weibiaoti-"></i>订单</router-link>
-    <router-link to="/profile"><i class="iconfont icon-wode"></i>我的</router-link>
+    <router-link to="/home"><i class="iconfont icon-eleme"></i>首页</router-link>
+    <router-link to="/discover"><i class="iconfont icon-discover"></i>发现</router-link>
+    <router-link to="/orderTab"><i class="iconfont icon-order"></i>订单</router-link>
+    <router-link to="/profile"><i class="iconfont icon-profile"></i>我的</router-link>
   </div>
 </template>
 
@@ -37,7 +37,7 @@
     color:#a0a0a0;
   }
   
-  i{
+  .footerNav i.iconfont{
     display: block;
     width: 16px;
     height: 16px;
