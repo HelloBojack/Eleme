@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+
+    <router-view></router-view>
+
+    <FooterNav></FooterNav>
+
+    <!-- <img src="./assets/logo.png">
     <div>
       <p>
         If Element is successfully added to this project, you'll see an
@@ -9,17 +14,17 @@
       </p>
       <el-button>el-button</el-button>
     </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FooterNav from './components/FooterNav.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    FooterNav
   }
 }
 </script>
