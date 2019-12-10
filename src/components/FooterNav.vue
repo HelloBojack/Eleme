@@ -28,6 +28,7 @@
     justify-content: center;
     height: 50px;
     background-size: 100%;
+    background: #fff;
     box-shadow: 0 -0.266667vw 0.533333vw rgba(0,0,0,.1);
   }
   .footerNav a {

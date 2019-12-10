@@ -3,7 +3,10 @@
     <ul>
       <li v-for="it in tabList" :key="it.id">
         <div :style="it.style">
-          <i class="iconfont" :class="it.icon"></i>
+          <i class="iconfont" :class="it.icon" v-if="it.icon"></i>
+          <p v-else>
+            {{it.number}}<span >个</span>
+          </p>
         </div>
         <p v-text="it.name"></p>
       </li>
@@ -55,15 +58,28 @@
     color: #fff;
   }
   .tabList1 li div {
-    width: 26px;
     height: 26px;
     line-height: 26px;
     border-radius: 50%;
   }
-  .tabList1 li p{
+  .tabList1 li p:nth-child(2){
     margin-top: 5px;
     width: 100%;
     text-align: center;
     color: black
+  }
+  .tabList1 li p:first-child{
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  }
+  .tabList1 li p:first-child span{
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+
   }
 </style>

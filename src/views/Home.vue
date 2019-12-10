@@ -16,56 +16,65 @@
   </div>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      value:'',
-    }
-  },
-}
+  export default {
+    data() {
+      return {
+        value: '',
+      }
+    },
+  }
 </script>
 
 <style lang="css" scope>
-.home {
-  background-color: #fff;
-}
-  .home .title{
+  .home {
+    background-color: #fff;
+    min-height: 100vh;
+  }
+
+  .home .title {
     height: 110px;
     background-image: linear-gradient(90deg, #0af, #0085ff);
     display: flex;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
+
   .home .location {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color:#fff;
+    color: #fff;
     font-weight: bold;
-    font-size:16px;
+    font-size: 16px;
     padding: 0 20px;
     height: 20px;
     padding-top: 30px;
   }
-  i.icon-location{
-    font-size:20px;
+
+  i.icon-location {
+    font-size: 20px;
   }
+
   .location div {
     margin-left: 5px;
   }
-  .home .van-field{
+
+  .home .van-field {
     width: 90%;
     margin: 0 auto;
     height: 38px;
   }
-  .home_loading img{
-    width: 50%;margin: 0 auto;
+
+  .home_loading img {
+    width: 50%;
+    margin: 0 auto;
   }
-  .home_loading p{
+
+  .home_loading p {
     margin: 10px 0;
     text-align: center;
     font-size: 18px;
-  
+
   }
 </style>
