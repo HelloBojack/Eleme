@@ -12,10 +12,13 @@
       <i class="iconfont icon-jiantou"></i>
     </div>
 
+
     <TabList1 :tabList='tabList1'></TabList1>
+
     <TabList2 :tabList='tabList2'></TabList2>
     <TabList2 :tabList='tabList3'></TabList2>
     <TabList2 :tabList='tabList4'></TabList2>
+    
     
   </div>
 </template>

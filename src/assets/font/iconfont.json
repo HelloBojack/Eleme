@@ -20,6 +20,13 @@
       "unicode_decimal": 59170
     },
     {
+      "icon_id": "1089767",
+      "name": "三角",
+      "font_class": "sanjiao",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
       "icon_id": "1092148",
       "name": "金币",
       "font_class": "coins",
@@ -46,6 +53,13 @@
       "font_class": "gift",
       "unicode": "e602",
       "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "2407260",
+      "name": "搜索",
+      "font_class": "tubiao-",
+      "unicode": "e654",
+      "unicode_decimal": 58964
     },
     {
       "icon_id": "3216176",
@@ -95,6 +109,13 @@
       "font_class": "profile",
       "unicode": "e63a",
       "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "9512515",
+      "name": "闹钟",
+      "font_class": "clock",
+      "unicode": "e616",
+      "unicode_decimal": 58902
     }
   ]
 }
