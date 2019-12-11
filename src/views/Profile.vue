@@ -1,10 +1,10 @@
 <template>
   <div class="profile">
-    <div v-if="noUser" class="noUser" @click="login">
+    <div v-if="!isLogin" class="isLogin" @click="login">
 
     </div>
 
-    <div class='self' v-if="noUser">
+    <div class='self' v-if="!isLogin">
       <div>
         <img
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAM1BMVEXE5/XI6fbT7fjW7/jl9fvw+f3////a8Pnt+PzL6vb7/v7i8/rP7Pf4/P7e8vn0+/3p9vvI4mwRAAACI0lEQVR4Ae3YBxbkIAgGYDCKgqbc/7LbS5hJexvMNr7Xp/0j9oBzzjnnnHPOuX8Qhq/wycwhJvopxQGfSM2F3pXcOZuj0DaJDN1gpSMRoY9B6Jhk6AALnSsI1tpIV0jrX+ZHyp3putwzN9XA8BmHmvolN1LGCWENp5GUADZYVGyGd1lFC4OJmVYqbKu0MoOFem22TPrv3cf004ywa6A1htvStdw2Go+vcC03C5EuzV3pSv/iQsqCllN4gj1tJmWC+342JV1dx8cGBuR8nEbznVHNkQW28UxKBeV+pRtsCrrMEsDGeLIIVlISgg08HqiYSIlgJRxWuoku8wA2VCU3dwVlZugQnE4PnYt+t05wR6FvysmeIPltrC8mC3U97t65bRQq9whO23uC6gRp9sFMa9NOJ8z2wWF3T1BvDfdXzLLb4oL7a1m9P53mq50PwSR42ltA2v6eEC2uFGH38Ja39wRVDUGDTSJudH+ETSg3G6wuESO8anxSpww3xF+aGvX+yWvQZ72rohQ0O+wFeI6q9QiPYr0cPGih31Rs1pfjBy2/KxnlYjJPtTYwNFy7CE5CnyzGxf4pMWzhQkTWyTjTWkV4hVW6PNhjIWUZdF+okgiDnSakSakhMHAItQhpAXom7xN+8nG1OnTawkRXJARzlc5V6KElOpYadJJH2jdm6CjPtG3O0FmL780eY4MncI5J6CtJMTM8iwODc84555xzzv0PPgKMKi2olgNo0QAAAABJRU5ErkJggg==">
@@ -26,69 +26,69 @@
       </div>
       <i class="iconfont icon-jiantou"></i>
     </div>
-    
-    
 
 
-    <TabList1 :tabList='tabList1' v-if="noUser"></TabList1>
+
+
+    <TabList1 :tabList='tabList1' v-if="!isLogin"></TabList1>
     <TabList1 :tabList='tabList0' v-else></TabList1>
     <TabList2 :tabList='tabList2'></TabList2>
     <TabList2 :tabList='tabList3'></TabList2>
     <TabList2 :tabList='tabList4'></TabList2>
-    
+
     <div class="policy">
       隐私政策
     </div>
-    
+
+
   </div>
 </template>
 <script>
   import TabList1 from '../components/profile/TabList1'
   import TabList2 from '../components/profile/TabList2'
 
+
+
   export default {
     data() {
       return {
-        noUser:false,
-        
+
         tabList0: [{
-            number:'8',
+            number: '8',
             style: 'color:#fe563c;width:100%',
             name: '红包'
           },
           {
-            number:'100',
+            number: '100',
             style: 'color:#61ba2b;width:100%',
             name: '金币'
           }
         ],
         tabList1: [{
-        icon: 'icon-redbag',
-        style: 'backgroundColor:#fe563c;width:26px',
-        name: '红包'
-        },
-        {
-        icon: 'icon-coins',
-        style: 'backgroundColor:#61ba2b;width:26px',
-        name: '金币'
-        }
-        ],
-        tabList2: [{
-            icon: 'icon-location',
-            style: 'color:#429be9',
-            name: '我的地址'
-          }
-        ],
-        tabList3:[
-          {
-          icon: 'icon-shop',
-          style: 'color:#8ad34f',
-          name: '金币商场'
+            icon: 'icon-redbag',
+            style: 'backgroundColor:#fe563c;width:26px',
+            name: '红包'
           },
           {
-          icon: 'icon-gift',
-          style: 'color:#fa714f',
-          name: '分享拿20元现金'
+            icon: 'icon-coins',
+            style: 'backgroundColor:#61ba2b;width:26px',
+            name: '金币'
+          }
+        ],
+        tabList2: [{
+          icon: 'icon-location',
+          style: 'color:#429be9',
+          name: '我的地址'
+        }],
+        tabList3: [{
+            icon: 'icon-shop',
+            style: 'color:#8ad34f',
+            name: '金币商场'
+          },
+          {
+            icon: 'icon-gift',
+            style: 'color:#fa714f',
+            name: '分享拿20元现金'
           }
         ],
         tabList4: [{
@@ -112,28 +112,34 @@
     },
     methods: {
       login(){
-        console.log('====================================');
-        console.log(1);
-        console.log('====================================');
+        this.$store.commit('login')
+      }
+    },
+    computed: {
+      isLogin() {
+        return this.$store.state.isLogin
       }
     },
     components: {
       TabList1,
       TabList2
-    }
+    },
+    mounted() {
+      
+    },
   }
 </script>
 <style lang="css" scope>
-  .profile {
-  
-  }
-  .noUser{
+  .profile {}
+
+  .isLogin {
     width: 100%;
     height: 100%;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
   }
+
   .self {
     height: 110px;
     background-image: linear-gradient(90deg, #0af, #0085ff);
@@ -166,7 +172,8 @@
     display: inline-block;
     font-size: 12px;
   }
-  .policy{
+
+  .policy {
     height: 50px;
     line-height: 50px;
     text-align: center;
