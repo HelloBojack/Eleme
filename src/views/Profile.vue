@@ -1,7 +1,7 @@
 <template>
   <div class="profile">
     <div v-if="!isLogin" class="isLogin" @click="login">
-
+      <router-link to="/login"></router-link>
     </div>
 
     <div class='self' v-if="!isLogin">
@@ -40,10 +40,11 @@
       隐私政策
     </div>
 
-
+    <FooterNav></FooterNav>
   </div>
 </template>
 <script>
+  import FooterNav from '../components/FooterNav.vue'
   import TabList1 from '../components/profile/TabList1'
   import TabList2 from '../components/profile/TabList2'
 
@@ -111,7 +112,7 @@
       }
     },
     methods: {
-      login(){
+      login() {
         this.$store.commit('login')
       }
     },
@@ -121,17 +122,19 @@
       }
     },
     components: {
+      FooterNav,
       TabList1,
       TabList2
     },
     mounted() {
-      
+
     },
   }
 </script>
 <style lang="css" scope>
-  .profile {}
-
+.profile{
+  width: 100%;height: 100%;
+}
   .isLogin {
     width: 100%;
     height: 100%;
@@ -167,7 +170,7 @@
 
   }
 
-  .profile i.iconfont {
+  .profile .self i.iconfont {
     color: #fff;
     display: inline-block;
     font-size: 12px;
@@ -179,5 +182,12 @@
     text-align: center;
     color: #0085ff;
     font-size: 16px;
+    /* background: #fff; */
+  }
+
+  .isLogin a {
+    width: 100%;
+    height: 100%;
+    display: block;
   }
 </style>

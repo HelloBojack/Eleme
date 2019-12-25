@@ -11,22 +11,27 @@ const routes = [
   {
     path: '/home',
     name: 'home',
-    component: () => import( /* webpackChunkName: "about" */ '../views/Home.vue'),
+    component: () => import('../views/Home.vue'),
   },
   {
     path: '/discover',
     name: 'discover',
-    component: () => import( /* webpackChunkName: "about" */ '../views/Discover.vue')
+    component: () => import('../views/Discover.vue')
   },
   {
     path: '/orderTab',
     name: 'orderTab',
-    component: () => import( /* webpackChunkName: "about" */ '../views/OrderTab.vue')
+    component: () => import('../views/OrderTab.vue')
   },
   {
     path: '/profile',
     name: 'profile',
-    component: () => import( /* webpackChunkName: "about" */ '../views/Profile.vue')
+    component: () => import('../views/Profile.vue')
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/login/Login.vue')
   },
   
 ]

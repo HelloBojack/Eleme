@@ -9,9 +9,7 @@ export default new Vuex.Store({
   },
   mutations: {
     login(){
-      console.log('====================================');
-      console.log(1);
-      console.log('====================================');
+      
     }
   },
   actions: {

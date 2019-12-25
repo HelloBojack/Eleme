@@ -1,5 +1,14 @@
 <template>
   <div class="orderTab">
-    <h1>This is an orderTab page</h1>
+    <FooterNav></FooterNav>
   </div>
 </template>
+<script>
+  import FooterNav from '../components/FooterNav.vue'
+
+  export default {
+    components: {
+      FooterNav
+    }
+  }
+</script>

@@ -1,19 +1,14 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <FooterNav></FooterNav>
-    
   </div>
 </template>
 
 <script>
-import FooterNav from './components/FooterNav.vue'
 
 export default {
   name: 'app',
-  components: {
-    FooterNav
-  }
+  
 }
 </script>
 
@@ -24,8 +19,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  min-height: 100vh;
+
   width: 100%;
   background-color:#f3f3f3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
 }
 </style>

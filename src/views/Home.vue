@@ -13,15 +13,23 @@
       <p>输入地址后才能订餐哦！</p>
       <van-button type="primary">手动选择地址</van-button>
     </div>
+
+
+    
+    <FooterNav></FooterNav>
   </div>
 </template>
 <script>
+  import FooterNav from '../components/FooterNav.vue'
   export default {
     data() {
       return {
         value: '',
       }
     },
+    components: {
+      FooterNav
+    }
   }
 </script>
 
