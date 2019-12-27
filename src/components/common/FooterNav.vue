@@ -30,6 +30,7 @@
     background-size: 100%;
     background: #fff;
     box-shadow: 0 -0.266667vw 0.533333vw rgba(0,0,0,.1);
+    z-index: 10;
   }
   .footerNav a {
     width: 25%;

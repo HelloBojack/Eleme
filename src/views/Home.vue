@@ -20,7 +20,7 @@
   </div>
 </template>
 <script>
-  import FooterNav from '../components/FooterNav.vue'
+  import FooterNav from '../components/common/FooterNav.vue'
   export default {
     data() {
       return {

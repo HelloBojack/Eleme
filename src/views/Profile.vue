@@ -44,7 +44,7 @@
   </div>
 </template>
 <script>
-  import FooterNav from '../components/FooterNav.vue'
+  import FooterNav from '../components/common/FooterNav.vue'
   import TabList1 from '../components/profile/TabList1'
   import TabList2 from '../components/profile/TabList2'
 
