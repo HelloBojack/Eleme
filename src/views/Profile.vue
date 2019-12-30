@@ -1,6 +1,6 @@
 <template>
   <div class="profile">
-    <div v-if="!isLogin" class="isLogin" @click="login">
+    <div v-if="!isLogin" class="isLogin">
       <router-link to="/login"></router-link>
     </div>
 
@@ -132,9 +132,11 @@
   }
 </script>
 <style lang="css" scope>
-.profile{
-  width: 100%;height: 100%;
-}
+  .profile {
+    width: 100%;
+    height: 100%;
+  }
+
   .isLogin {
     width: 100%;
     height: 100%;

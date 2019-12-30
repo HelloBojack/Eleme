@@ -1,8 +1,8 @@
 <template>
   <div class="login">
-    <router-link to="profile">
-      <van-icon name="arrow-left" />
-    </router-link>
+
+    <van-icon name="arrow-left" @click="$router.go(-1);" />
+  
     <img src="//shadow.elemecdn.com/faas/h5/static/logo.ba876fd.png" alt="">
 
     <div class="loginForm">

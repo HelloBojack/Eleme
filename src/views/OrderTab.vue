@@ -1,10 +1,15 @@
 <template>
   <div class="orderTab">
     <div class="orderInner">
-      <OrderCard v-for="item in orderList" :orderItem='item' :key="item.id"></OrderCard>
-      <div class="orderTabFooter">
-        查看三个月前的外卖订单
-        <van-icon name="arrow-down" />
+      <div v-if="isLogin">
+        <OrderCard v-for="item in orderList" :orderItem='item' :key="item.id"></OrderCard>
+        <div class="orderTabFooter">
+          查看三个月前的外卖订单
+          <van-icon name="arrow-down" />
+        </div>
+      </div>
+      <div v-else>
+
       </div>
     </div>
     <FooterNav></FooterNav>
@@ -84,6 +89,11 @@
         ],
       }
     },
+    computed: {
+      isLogin() {
+        return this.$store.state.isLogin
+      },
+    },
     components: {
       FooterNav,
       OrderCard
@@ -91,21 +101,24 @@
   }
 </script>
 <style lang="css">
-  .orderTab{
+  .orderTab {
     height: 94%;
   }
-  .orderTab .orderInner{
-    overflow-y:scroll ;
+
+  .orderTab .orderInner {
+    overflow-y: scroll;
     height: 100%;
   }
+
   .orderTab .orderTabFooter {
     padding: 10px 0;
     font-size: 12px;
-    color:#999;
+    color: #999;
     /* display: flex;
     align-items: center;
     justify-content: center; */
   }
+
   /* .orderTab .orderTabFooter .van-icon.van-icon-arrow-down {
     font-size: 12px;
     
