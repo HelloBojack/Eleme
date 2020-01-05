@@ -28,6 +28,7 @@
       </div>
       <FoodEntry></FoodEntry>
       <HomeBanner :bannerInfo='bannerInfo' />
+      <ShopList/>
     </div>
     <FooterNav></FooterNav>
   </div>
@@ -36,6 +37,7 @@
   import FooterNav from '../components/common/FooterNav.vue'
   import FoodEntry from '../components/home/FoodEntry.vue'
   import HomeBanner from '../components/home/HomeBanner'
+  import ShopList from '../components/home/ShopList'
   export default {
     data() {
       return {
@@ -63,7 +65,8 @@
     components: {
       FooterNav,
       FoodEntry,
-      HomeBanner
+      HomeBanner,
+      ShopList
     }
   }
 </script>
