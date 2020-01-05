@@ -18,23 +18,33 @@
       </div>
     </div>
     <div v-else>
-      <img
-        src="https://cube.elemecdn.com/7/d8/a867c870b22bc74c87c348b75528djpeg.jpeg?x-oss-process=image/format,webp/resize,w_90,h_90,m_fixed"
-        alt="">
+      <div class='title'>
+        <div class="location">
+          <i class="iconfont icon-location"></i>
+          <div class="van-ellipsis">安邦·阳光尚城</div>
+          <i class="iconfont icon-sanjiao"></i>
+        </div>
+        <van-field v-model="value" placeholder="搜索饿了么商家、商品名称" />
+      </div>
+      <FoodEntry></FoodEntry>
+      <HomeBanner :bannerInfo='bannerInfo' />
     </div>
-
-
-
-
     <FooterNav></FooterNav>
   </div>
 </template>
 <script>
   import FooterNav from '../components/common/FooterNav.vue'
+  import FoodEntry from '../components/home/FoodEntry.vue'
+  import HomeBanner from '../components/home/HomeBanner'
   export default {
     data() {
       return {
         value: '',
+        bannerInfo:{
+        title:'品质套餐',
+        desc:'搭配齐全吃得好',
+        img:'https://cube.elemecdn.com/e/ee/df43e7e53f6e1346c3fda0609f1d3png.png?x-oss-process=image/format,webp/resize,w_282,h_188,m_fixed'
+        }
       }
     },
     computed: {
@@ -51,7 +61,9 @@
       }
     },
     components: {
-      FooterNav
+      FooterNav,
+      FoodEntry,
+      HomeBanner
     }
   }
 </script>
