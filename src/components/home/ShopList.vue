@@ -1,8 +1,23 @@
 <template>
   <div class="shopList">
     <div class="shoplist-title">推荐商家</div>
+    <FilterNav />
   </div>
 </template>
+<script>
+  import FilterNav from './FilterNav'
+  export default {
+    data() {
+      return {
+
+      }
+    },
+    components: {
+      FilterNav
+    }
+  }
+</script>
+
 <style lang="css">
   .shoplist-title {
     display: flex;
@@ -12,6 +27,7 @@
     color: #000;
 
   }
+
   .shoplist-title::before,
   .shoplist-title::after {
     display: block;
