@@ -10,7 +10,7 @@ export default {
 </script>
 <style lang="css">
   .shopTag{
-    padding-left: 21%;
+    padding-left: 18%;
     display: flex;
     justify-content: flex-start;
     align-items: center;

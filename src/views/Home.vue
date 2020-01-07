@@ -1,36 +1,37 @@
 <template>
   <div class="home">
-
-    <div v-if="!isLogin||!isLocation" class="isLogin">
-      <router-link to="/login"></router-link>
-      <div class='title'>
-        <div class="location">
-          <i class="iconfont icon-location"></i>
-          <div class="van-ellipsis">未能获取地址</div>
-          <i class="iconfont icon-sanjiao"></i>
+    <div class="homeInner">
+      <div v-if="!isLogin||!isLocation" class="isLogin">
+        <router-link to="/login"></router-link>
+        <div class='title'>
+          <div class="location">
+            <i class="iconfont icon-location"></i>
+            <div class="van-ellipsis">未能获取地址</div>
+            <i class="iconfont icon-sanjiao"></i>
+          </div>
+          <van-field v-model="value" placeholder="搜索饿了么商家、商品名称" />
         </div>
-        <van-field v-model="value" placeholder="搜索饿了么商家、商品名称" />
-      </div>
-      <div class="home_loading">
-        <img src="../assets/img/home_loading.gif" alt="">
-        <p>输入地址后才能订餐哦！</p>
-        <van-button type="primary">手动选择地址</van-button>
-      </div>
-    </div>
-    <div v-else>
-      <div class='title'>
-        <div class="location">
-          <i class="iconfont icon-location"></i>
-          <div class="van-ellipsis">安邦·阳光尚城</div>
-          <i class="iconfont icon-sanjiao"></i>
+        <div class="home_loading">
+          <img src="../assets/img/home_loading.gif" alt="">
+          <p>输入地址后才能订餐哦！</p>
+          <van-button type="primary">手动选择地址</van-button>
         </div>
-        <van-field v-model="value" placeholder="搜索饿了么商家、商品名称" />
       </div>
-      <FoodEntry></FoodEntry>
-      <HomeBanner :bannerInfo='bannerInfo' />
-      <ShopList/>
+      <div v-else>
+        <div class='title'>
+          <div class="location">
+            <i class="iconfont icon-location"></i>
+            <div class="van-ellipsis">安邦·阳光尚城</div>
+            <i class="iconfont icon-sanjiao"></i>
+          </div>
+          <van-field v-model="value" placeholder="搜索饿了么商家、商品名称" />
+        </div>
+        <FoodEntry></FoodEntry>
+        <HomeBanner :bannerInfo='bannerInfo' />
+        <ShopList />
+      </div>
+      <FooterNav></FooterNav>
     </div>
-    <FooterNav></FooterNav>
   </div>
 </template>
 <script>
@@ -91,9 +92,13 @@
 
   .home {
     background-color: #fff;
-    min-height: 100vh;
+    height: 94%;
   }
 
+  .home .homeInner {
+        overflow-y: scroll;
+        height: 100%;
+  }
 
   .home .title {
     height: 110px;

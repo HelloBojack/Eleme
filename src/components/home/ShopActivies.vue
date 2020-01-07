@@ -15,7 +15,7 @@
 <style lang="css">
 
   .shopActivies {
-    padding-left: 21%;
+    padding-left: 18%;
     text-align: left;
     margin-top: 10px;
     width: 79%;
