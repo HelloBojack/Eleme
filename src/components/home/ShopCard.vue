@@ -19,19 +19,25 @@
           </div>
         </div>
       </div>
-
     </div>
-    <!-- <div v-text="shopInfo.tag"></div> -->
+    <ShopTag :tags="shopInfo.tags" />
+    <ShopActivies :activies="shopInfo.activityList" />
   </div>
 </template>
 <script>
+import ShopTag from './ShopTag'
+import ShopActivies from './ShopActivies'
   export default {
     data() {
       return {
 
       }
     },
-    props: ['shopInfo']
+    props: ['shopInfo'],
+    components:{
+      ShopTag,
+      ShopActivies
+    }
   }
 </script>
 <style lang="css" scope>
