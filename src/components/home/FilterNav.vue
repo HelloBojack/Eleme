@@ -21,5 +21,10 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 5px;
+    position: sticky;
+    top:60px;
+    z-index: 999;
+    background: #fff;
+    padding: 5px 0;
   }
 </style>

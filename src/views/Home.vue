@@ -9,7 +9,9 @@
             <div class="van-ellipsis">未能获取地址</div>
             <i class="iconfont icon-sanjiao"></i>
           </div>
-          <van-field v-model="value" placeholder="搜索饿了么商家、商品名称" />
+          <div>
+            <van-field v-model="value" placeholder="搜索饿了么商家、商品名称" />
+          </div>
         </div>
         <div class="home_loading">
           <img src="../assets/img/home_loading.gif" alt="">
@@ -24,6 +26,9 @@
             <div class="van-ellipsis">安邦·阳光尚城</div>
             <i class="iconfont icon-sanjiao"></i>
           </div>
+
+        </div>
+        <div class="home_search">
           <van-field v-model="value" placeholder="搜索饿了么商家、商品名称" />
         </div>
         <FoodEntry></FoodEntry>
@@ -43,10 +48,10 @@
     data() {
       return {
         value: '',
-        bannerInfo:{
-        title:'品质套餐',
-        desc:'搭配齐全吃得好',
-        img:'https://cube.elemecdn.com/e/ee/df43e7e53f6e1346c3fda0609f1d3png.png?x-oss-process=image/format,webp/resize,w_282,h_188,m_fixed'
+        bannerInfo: {
+          title: '品质套餐',
+          desc: '搭配齐全吃得好',
+          img: 'https://cube.elemecdn.com/e/ee/df43e7e53f6e1346c3fda0609f1d3png.png?x-oss-process=image/format,webp/resize,w_282,h_188,m_fixed'
         }
       }
     },
@@ -85,7 +90,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     display: block;
   }
@@ -96,12 +101,22 @@
   }
 
   .home .homeInner {
-        overflow-y: scroll;
-        height: 100%;
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .home .home_search {
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(90deg, #0af, #0085ff);
+    padding: 10px 0;
+    position: sticky;
+    z-index: 999;
+    top: 0;
   }
 
   .home .title {
-    height: 110px;
+    height: 60px;
     background-image: linear-gradient(90deg, #0af, #0085ff);
     display: flex;
     justify-content: center;
