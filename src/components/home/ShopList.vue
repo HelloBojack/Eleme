@@ -12,6 +12,7 @@
     data() {
       return {
         shopInfoList: [{
+            id:'1',
             img: 'https://cube.elemecdn.com/0/13/37f072470501953a0f5783d489139jpeg.jpeg?x-oss-process=image/format,webp/resize,w_130,h_130,m_fixed',
             title: '小腚飘轻海鲜烧烤(原胖哥前程街店)',
             score: '4.5',
@@ -128,7 +129,7 @@
             expressFee: '3',
             timeWrap: '33',
             distanceWrap: '2.49',
-            tags: ['烧烤'],
+            tags: ['烧烤','支持自取'],
             activityList: [{
                 icon: '赠',
                 icon_color: 'background:rgb(60, 199, 145)',

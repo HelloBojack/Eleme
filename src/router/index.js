@@ -33,7 +33,11 @@ const routes = [
     name: 'login',
     component: () => import('../views/login/Login.vue')
   },
-  
+  {
+    path:'/shopIndex/:shopId',
+    name:'shopIndex',
+    component: () => import('../components/shopIndex/shopIndex.vue')
+  }
 ]
 
 const router = new VueRouter({
