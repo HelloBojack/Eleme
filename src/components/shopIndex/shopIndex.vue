@@ -1,7 +1,7 @@
 <template>
   <div class="shopIndex">
     <shopTop :shopInfo="shopInfo"></shopTop>
-    <foodList/>
+    <foodList :shopInfo="shopInfo" />
   </div>
 </template>
 <script>
