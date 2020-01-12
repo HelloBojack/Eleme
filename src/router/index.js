@@ -36,7 +36,24 @@ const routes = [
   {
     path:'/shopIndex/:shopId',
     name:'shopIndex',
-    component: () => import('../components/shopIndex/shopIndex.vue')
+    component: () => import('../components/shopIndex/shopIndex.vue'),
+    children:[
+      {
+        path: '/shopMenu',
+        name: 'shopMenu',
+        component: () => import('../components/shopIndex/shopMenu.vue'),
+      },
+      {
+        path: '/shopRecommend',
+        name: 'shopRecommend',
+        component: () => import('../components/shopIndex/shopRecommend.vue'),
+      },
+      {
+        path: '/shopDetail',
+        name: 'shopDetail',
+        component: () => import('../components/shopIndex/shopDetail.vue'),
+      }
+    ]
   }
 ]
 

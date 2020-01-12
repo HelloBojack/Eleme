@@ -1,6 +1,7 @@
 <template>
   <div class="foodList">
     <foodNav></foodNav>
+    <router-view></router-view>
   </div>
 </template>
 <script>
