@@ -15,7 +15,7 @@
     },
   }
 </script>
-<style lang="css">
+<style lang="css" scoped>
   .filterNav{
     display: flex;
     justify-content: space-around;

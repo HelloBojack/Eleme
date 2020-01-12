@@ -131,7 +131,7 @@
     },
   }
 </script>
-<style lang="css" scope>
+<style lang="css" scoped>
   .profile {
     width: 100%;
     height: 100%;

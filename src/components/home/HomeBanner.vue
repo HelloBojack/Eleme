@@ -15,7 +15,7 @@
     props: ['bannerInfo']
   }
 </script>
-<style lang="css">
+<style lang="css" scoped>
   .homeBanner {
     width: 90%;
     margin: 10px auto;

@@ -17,7 +17,7 @@
   }
 </script>
 
-<style lang="css" scope>
+<style lang="css" scoped>
   .footerNav {
     width: 100%;
     position: fixed;

@@ -77,7 +77,7 @@
   }
 </script>
 
-<style lang="css" scope>
+<style lang="css" scoped>
   .isLogin {
     width: 100%;
     height: 100%;

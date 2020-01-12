@@ -23,7 +23,7 @@
     },
   }
 </script>
-<style lang="css">
+<style lang="css" scoped>
   .shopActivies {
     padding-left: 18%;
     text-align: left;

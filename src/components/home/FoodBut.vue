@@ -12,7 +12,7 @@
     },
   }
 </script>
-<style lang="css">
+<style lang="css" scoped>
   .foodBut{
     width: 20%;
     margin-top: 10px;

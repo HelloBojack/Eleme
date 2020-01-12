@@ -184,7 +184,7 @@
   }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
   .shoplist-title {
     display: flex;
     align-items: center;

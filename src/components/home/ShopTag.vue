@@ -8,7 +8,7 @@ export default {
   props:['tags'],
 }
 </script>
-<style lang="css">
+<style lang="css" scoped>
   .shopTag{
     padding-left: 18%;
     display: flex;

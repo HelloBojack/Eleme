@@ -42,7 +42,7 @@
     }
   }
 </script>
-<style lang="css" scope>
+<style lang="css" scoped>
   .shopCard {
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;

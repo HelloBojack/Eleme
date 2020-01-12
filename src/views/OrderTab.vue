@@ -100,7 +100,7 @@
     }
   }
 </script>
-<style lang="css">
+<style lang="css" scoped>
   .orderTab {
     height: 94%;
   }

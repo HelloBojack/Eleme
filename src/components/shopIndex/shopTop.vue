@@ -33,7 +33,7 @@ import actTagList from './actTagList'
     }
   }
 </script>
-<style lang="css">
+<style lang="css" scoped>
   .shopTop {
     width: 100%;
   }

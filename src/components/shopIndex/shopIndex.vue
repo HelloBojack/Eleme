@@ -1,10 +1,12 @@
 <template>
   <div class="shopIndex">
     <shopTop :shopInfo="shopInfo"></shopTop>
+    <foodList/>
   </div>
 </template>
 <script>
   import shopTop from './shopTop'
+  import foodList from '../foodList/foodList'
   export default {
     data() {
       return {
@@ -54,6 +56,7 @@
     },
     components: {
       shopTop,
+      foodList
     },
     mounted() {
       console.log('====================================');
@@ -62,3 +65,8 @@
     }
   }
 </script>
+<style lang="css" scoped>
+  .shopIndex{
+    width: 100%;
+  }
+</style>

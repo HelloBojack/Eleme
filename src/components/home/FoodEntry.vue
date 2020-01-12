@@ -54,7 +54,7 @@
     }
   }
 </script>
-<style lang="css">
+<style lang="css" scoped>
   .foodEntry{
     width: 100%;
     display: flex;

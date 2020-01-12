@@ -32,7 +32,7 @@
   }
 </script>
 
-<style lang="css" scope="this api replaced by slot-scope in 2.5.0+">
+<style lang="css" scoped>
   .tabList1 ul {
     width: 100%;
     display: flex;

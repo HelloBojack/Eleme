@@ -17,7 +17,7 @@
     props: ['actTagDateList']
   }
 </script>
-<style lang="css">
+<style lang="css" scoped>
   .actTagList {
     width: 75%;
     display: flex;
